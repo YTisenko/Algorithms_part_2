@@ -1,0 +1,12 @@
+def reverse_words(sentence):
+    words = sentence.split()  
+    reversed_words = []  
+
+    for word in words:
+        reversed_word = word[::-1]  
+        reversed_words.append(reversed_word)  
+
+    x = ' '.join(reversed_words)  
+    return x
+
+print(reverse_words("Python is awesome"))
