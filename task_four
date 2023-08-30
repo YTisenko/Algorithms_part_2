@@ -1,0 +1,12 @@
+def repeat_digits(string):
+    result = ""
+    for char in string:
+        if char.isdigit():
+            current_num = int(char)
+            repeated_char = char * current_num
+            result += repeated_char
+        else:
+            result += char
+    return result
+print(repeat_digits("312"))  
+print(repeat_digits("102")) 
