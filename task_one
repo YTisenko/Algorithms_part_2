@@ -1,0 +1,11 @@
+def reverse_integer(num:int):
+    if num < 0:
+        num = str(num)[1:]  # Convert to string and remove the negative sign
+        reversed_str_num = num[::-1]  # Reverse the string
+        reversed_num = int(reversed_str_num)  # Convert back to integer
+        reversed_num =reversed_num * -1  # Add the negative sign back
+        return reversed_num
+    else:
+        return num
+
+print(reverse_integer(-199))
